@@ -95,6 +95,8 @@
     display: grid;
     grid-template-rows: repeat(auto-fit, 150px);
     grid-template-columns: repeat(auto-fit, 150px);
+    align-content: space-around;
+    gap: 10px;
 
 }
 
@@ -113,8 +115,6 @@
         grid-column-start: 1;
         grid-column-end: 4;
         grid-row: 1;
-        border-style: dashed;
-        border-color: grey;
 
     }
     
@@ -123,8 +123,6 @@
         grid-column-start: 1;
         grid-column-end: 4;
         grid-row: 2;
-        border-style: dashed;
-        border-color: grey;
     }
 
     .info {
@@ -139,8 +137,6 @@
         .pages {
             font-size: 0.8rem;
             font-style: italic;
-            border-style: dashed;
-            border-color: grey;
             grid-column: 1;
         }
     
@@ -148,16 +144,12 @@
             font-size: 0.8rem;
             font-style: italic;
             color: red;
-            border-style: dashed;
-            border-color: grey;
             grid-column: 2;
         }
         .is-read {
             font-size: 0.8rem;
             font-style: italic;
             color: green;
-            border-style: dashed;
-            border-color: grey;
             grid-column: 2;
         }
     }

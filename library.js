@@ -84,10 +84,10 @@ function addCard(book) {
     const read = document.createElement("div");
     if(book.read){
       read.clasName = "is-read";
-      read.textContent = "✅"
+      read.textContent = "Read : ✅"
     } else {
       read.clasName = "not-read";
-      read.textContent = "❌"
+      read.textContent = "Read : ❌"
     }
 
     info.appendChild(read);
