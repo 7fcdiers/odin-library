@@ -1,12 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <script src="library.js"></script>
-</head>
-<body>
-    
-</body>
+    <script src="library.js" defer></script>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="newBookDiv">
+      <button id="newBook">NEW BOOK</button>
+      <dialog class="dialog">
+      <form class="form" id="newBookForm" method="dialog">
+        <div class="form-row">
+          <div class="form-input">
+            <label for="input[object Object]">Title</label
+            ><input id="inputTitle" type="string" required />
+          </div>
+          <div class="form-input">
+            <label for="input[object Object]">Author</label
+            ><input id="inputAuthor" type="string" required />
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="form-input">
+            <label for="input[object Object]">Pages</label
+            ><input id="inputPages" type="number" required />
+          </div>
+          <div class="form-input">
+            <label for="input[object Object]">Read</label
+            ><input id="inputRead" type="checkbox" value="false"/>
+          </div>
+        </div>
+        <div class="form-btn">
+          <button type="submit" form="newBookForm">Create Book</button>
+          <button type="reset" id="btn-close" class="btn-close" data-close>Close</button>
+        </div>
+      </form>
+    </dialog>
+    </div>
+    <div class="container" id="container-grid">
+    </div>
+  </body>
 </html>
