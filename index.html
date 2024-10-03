@@ -8,38 +8,42 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <div id="newBookDiv">
-      <button id="newBook">NEW BOOK</button>
+    <div id="newBookDiv" >
+      <button id="newBook" class="new-book">NEW BOOK</button>
       <dialog class="dialog">
-      <form class="form" id="newBookForm" method="dialog">
-        <div class="form-row">
-          <div class="form-input">
-            <label for="input[object Object]">Title</label
-            ><input id="inputTitle" type="string" required />
+        <form class="form" id="newBookForm" method="dialog">
+          <div class="form-row">
+            <div class="form-input">
+              <label for="inputTitle">Title</label
+              ><input id="inputTitle" type="string" required />
+            </div>
+            <div class="form-input">
+              <label for="inputAuthor">Author</label
+              ><input id="inputAuthor" type="string" required />
+            </div>
           </div>
-          <div class="form-input">
-            <label for="input[object Object]">Author</label
-            ><input id="inputAuthor" type="string" required />
+          <div class="form-row">
+            <div class="form-input">
+              <label for="inputPages">Pages</label
+              ><input id="inputPages" type="number" required />
+            </div>
+            <div class="form-input">
+              <label for="inputRead">Read</label
+              ><input type="checkbox" id="inputRead" name="inputRead" />
+            </div>
           </div>
-        </div>
-        <div class="form-row">
-          <div class="form-input">
-            <label for="input[object Object]">Pages</label
-            ><input id="inputPages" type="number" required />
+          <div class="form-btn">
+            <button type="submit" form="newBookForm">Create Book</button>
+            <button type="reset" id="btn-close" class="btn-close" data-close>
+              Close
+            </button>
           </div>
-          <div class="form-input">
-            <label for="input[object Object]">Read</label
-            ><input id="inputRead" type="checkbox" value="false"/>
-          </div>
-        </div>
-        <div class="form-btn">
-          <button type="submit" form="newBookForm">Create Book</button>
-          <button type="reset" id="btn-close" class="btn-close" data-close>Close</button>
-        </div>
-      </form>
-    </dialog>
+        </form>
+      </dialog>
     </div>
-    <div class="container" id="container-grid">
+    <div class="my-library" id="my-library">
+      <h1>My Library</h1>
+      <div class="container" id="container-grid"></div>
     </div>
   </body>
 </html>
